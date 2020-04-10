@@ -11,5 +11,5 @@ Run npm install to load all of the dependencies
 
 GitHub repository: https://github.com/TravisGuillory/NoteTaker
 
-[NoteTaker Gif](notetakergif.gif)
+![NoteTaker Gif](notetakergif.gif)
 
