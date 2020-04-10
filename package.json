@@ -1,0 +1,26 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "view, save and delete notes ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies":  {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravisGuillory/NoteTaker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TravisGuillory/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/TravisGuillory/NoteTaker#readme"
+}
