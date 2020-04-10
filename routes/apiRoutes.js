@@ -3,6 +3,7 @@ const fs = require("fs");
 
 module.exports = function (app) {
   
+    // Get all saved notes
     app.get("/api/notes", async (req, res) =>{
         const data = await fs.readFileSync(
             path.join(__dirname, "../db/db.json"),
@@ -12,6 +13,7 @@ module.exports = function (app) {
         return res.json(parseData);
     });
   
+    // Post a new note
     app.post("/api/notes", async (req, res) => {
     const data = await fs.readFileSync(
       path.join(__dirname, "../db/db.json"),
@@ -35,6 +37,8 @@ module.exports = function (app) {
     res.json(notes);
   });
 
+
+  // Delete a note
   app.delete("/api/notes/:id", async (req, res) => {
     const { id } = req.params;
     const data = await fs.readFileSync(
