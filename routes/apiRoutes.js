@@ -1,6 +1,4 @@
 const path = require("path");
-const express = require("express");
-const app = express();
 const fs = require("fs");
 
 module.exports = function (app) {
@@ -10,8 +8,8 @@ module.exports = function (app) {
             path.join(__dirname, "../db/db.json"),
             "utf-8"
             );
-            
-            res.json(data);
+        const parseData = JSON.parse(data);
+        return res.json(parseData);
     });
   
     app.post("/api/notes", async (req, res) => {
