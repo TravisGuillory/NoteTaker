@@ -10,10 +10,10 @@
   "author": "Travis Guillory",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies":  {
-    "express": "^4.16.4"
+    "express": "^4.18.2"
   },
   "repository": {
     "type": "git",
